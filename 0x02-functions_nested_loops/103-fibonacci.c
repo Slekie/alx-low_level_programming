@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  *main - prints sum of even fibonacci
  *suit elements
  *fibonacci suit numbers
