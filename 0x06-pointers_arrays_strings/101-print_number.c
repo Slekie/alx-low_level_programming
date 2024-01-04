@@ -1,15 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+ * print_number - prints an integer;
+ * @n: integer to be printed;
+ */
+void print_number(int n)
 {
-	  int n;
-	  int a[5];
-	  int *p;
+	unsigned int n1;
 
-	  a[2] = 1024;
-	  p = &n;
-	  *(p + 5) = 98;
-	  printf("a[2] = %d\n", a[2]);
+	if (n < 0)
+	{
+		n1 = -n;
+		_putchar('-');
+	} else
+	{
+		n1 = n;
+	}
 
-	  return (0);
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
 }
