@@ -23,12 +23,13 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 	n = atoi(argv[1]);
-	
+
 	if (n < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
+
 	for (i = 0; i < n; i++)
 	{
 		p = *(unsigned char *)address;
